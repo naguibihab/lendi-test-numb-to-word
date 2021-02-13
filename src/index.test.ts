@@ -12,4 +12,16 @@ describe('convertNumberToWord test', () => {
     expect(convertNumberToWord(24)).toEqual('twenty four');
     expect(convertNumberToWord(45)).toEqual('forty five');
   });
+
+  it('should pass with three digits', () => {
+    expect(convertNumberToWord(100)).toEqual('one hundred');
+    expect(convertNumberToWord(642)).toEqual('six hundred and fourty two');
+    expect(convertNumberToWord(405)).toEqual('four hundred and five');
+  });
+
+  it('should pass with four digits', () => {
+    expect(convertNumberToWord(1000)).toEqual('one thousand');
+    expect(convertNumberToWord(9281)).toEqual('nine thousand two hundred and eighty one');
+    expect(convertNumberToWord(7492)).toEqual('seven thousand four hundred and ninety two');
+  });
 })

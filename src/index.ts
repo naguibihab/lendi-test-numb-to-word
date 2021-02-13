@@ -25,4 +25,3 @@ const firstDigitNumArray = [
 ]
 
 export { convertNumberToWord };
-console.log(convertNumberToWord(1));

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "target": "es6",
+    "strict": true,
+    "incremental": true,
+    "pretty": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": true
+  },
+  "exclude": ["**/**/__mocks__", "**/**/*.test.ts"]
+}

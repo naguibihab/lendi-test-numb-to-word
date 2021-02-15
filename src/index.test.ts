@@ -24,4 +24,16 @@ describe('convertNumberToWord test', () => {
     expect(convertNumberToWord(9281)).toEqual('nine thousand two hundred and eighty one');
     expect(convertNumberToWord(7492)).toEqual('seven thousand four hundred and ninety two');
   });
+  
+  it('should pass with five digits', () => {
+    expect(convertNumberToWord(10000)).toEqual('ten thousand');
+    expect(convertNumberToWord(99281)).toEqual('ninty nine thousand two hundred and eighty one');
+    expect(convertNumberToWord(77492)).toEqual('seventy seven thousand four hundred and ninety two');
+  });
+  
+   it('should pass with six digits', () => {
+    expect(convertNumberToWord(100000)).toEqual('one hundred thousand');
+    expect(convertNumberToWord(999281)).toEqual('nine hundred and ninty nine thousand two hundred and eighty one');
+    expect(convertNumberToWord(777492)).toEqual('seven hundred and seventy seven thousand four hundred and ninety two');
+  });
 })
